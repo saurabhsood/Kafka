@@ -2,7 +2,6 @@ package com.streams;
 
 import java.util.Arrays;
 import java.util.Properties;
-import java.util.regex.Pattern;
 
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
