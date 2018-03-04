@@ -59,6 +59,7 @@ public class WordCountStreams {
 		      // values, i.e. we can ignore whatever data is in the record keys and thus invoke
 		      // `flatMapValues()` instead of the more generic `flatMap()`.
 		      .flatMapValues(value -> Arrays.asList(value.toLowerCase().split(" ")))
+
 		      // Count the occurrences of each word (record key).
 		      //
 		      // This will change the stream type from `KStream<String, String>` to `KTable<String, Long>`
